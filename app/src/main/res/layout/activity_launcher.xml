@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureWhite"
+    android:id="@+id/launcher_group"
+    android:animateLayoutChanges="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/luche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/luche_sharp" />
+
+
+        <luche.template.oneshot.ubiquo.com.luche.TypeWriter
+            android:layout_marginBottom="32dp"
+            android:id="@+id/desc"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/luche"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:ignore="MissingPrefix" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/desc"
+            android:id="@+id/night_vision_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/firstLine"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@drawable/main_gradient" />
+
+            <TextView
+                android:id="@+id/night_vision"
+                fontPath="fonts/FV_Almelo.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Night Vision"
+                android:textColor="@color/pureBlack"
+                android:textSize="32dp"
+                android:visibility="gone"
+                tools:ignore="MissingPrefix" />
+
+            <View
+                android:id="@+id/secondLine"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@drawable/inverse_main_gradient" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:id="@+id/night_vision_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/night_vision_group"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:src="@drawable/night_vision_logo" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
