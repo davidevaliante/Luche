@@ -63,7 +63,7 @@ public class Launcher extends AppCompatActivity {
 
         setContentView(R.layout.activity_launcher);
 
-        //Elementi UI
+        //Elementi UI temporanei
         desc = (TypeWriter) findViewById(R.id.desc);
         nightVision = (TextView) findViewById(R.id.night_vision);
         group = (ViewGroup) findViewById(R.id.launcher_group);
