@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/luche_sharp" />
+            android:src="@drawable/luche_logo_transparent" />
 
 
         <luche.template.oneshot.ubiquo.com.luche.TypeWriter
@@ -78,7 +78,18 @@
             android:layout_below="@+id/night_vision_group"
             android:layout_centerHorizontal="true"
             android:padding="16dp"
-            android:src="@drawable/night_vision_logo" />
+            android:src="@drawable/night_vision_logo_black" />
+        <TextView
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_below="@id/night_vision_logo"
+            android:text="powered by UbiQuo"
+            android:id="@+id/ubiquo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix" />
 
     </RelativeLayout>
 

@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="pureWhite">#ffffff</color>
     <color name="pureBlack">#000000</color>
+    <color name="shaded40">#40000000</color>
 </resources>

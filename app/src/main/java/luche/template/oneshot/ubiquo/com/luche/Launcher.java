@@ -5,17 +5,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Handler;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.util.Pair;
 import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
-import android.transition.*;
-import android.transition.Explode;
-import android.transition.Fade;
-import android.transition.TransitionManager;
-import android.util.AttributeSet;
-import android.util.Log;
-import android.view.Display;
+
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -24,22 +19,20 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
-import android.view.animation.BounceInterpolator;
 import android.view.animation.DecelerateInterpolator;
-import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.kogitune.activity_transition.ActivityTransition;
+import com.kogitune.activity_transition.ActivityTransitionLauncher;
+import com.transitionseverywhere.*;
 
 import com.transitionseverywhere.AutoTransition;
 import com.transitionseverywhere.Transition;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-import com.transitionseverywhere.*;
 
-import static android.R.attr.visible;
-import static android.R.attr.width;
 
 public class Launcher extends AppCompatActivity {
 
@@ -49,6 +42,8 @@ public class Launcher extends AppCompatActivity {
     View bottom, top;
     ImageView logo, night_logo;
     TypeWriter desc;
+    TextView ubiquo;
+
 
 
     @Override
@@ -71,6 +66,7 @@ public class Launcher extends AppCompatActivity {
         bottom = findViewById(R.id.secondLine);
         logo = (ImageView) findViewById(R.id.luche);
         night_logo = (ImageView) findViewById(R.id.night_vision_logo);
+        ubiquo = (TextView)findViewById(R.id.ubiquo);
 
         //dichiarazione animazione che cambia l'alpha (la trasparenza) di una View
         Animation fadeInV = new AlphaAnimation(0,1);
@@ -136,6 +132,7 @@ public class Launcher extends AppCompatActivity {
 
                     //Il logo (dichiarato nel file xml come invisibile) viene reso visibile ed animato dal metodo di sopra
                     nightVision.setVisibility(visible ? View.VISIBLE : View.GONE);
+                    ubiquo.setVisibility(View.VISIBLE);
                     //Cambia la lunghezza delle due linee colorate. Senza animazione il cambiamento sarebbe immediato
                     //con animazione, tutto avviene in modo fluido
                     top.getLayoutParams().width =  ViewGroup.LayoutParams.MATCH_PARENT;
@@ -176,8 +173,27 @@ public class Launcher extends AppCompatActivity {
                                 //passa direttamente alla prossima activity
                                 @Override
                                 public void onAnimationEnd(Animator animator) {
-                                    Intent toPage = new Intent(Launcher.this,FirstPage.class);
-                                    startActivity(toPage);
+                                    com.transitionseverywhere.TransitionManager.beginDelayedTransition(group);
+
+                                    night_logo.setVisibility(View.GONE);
+                                    top.getLayoutParams().width = 0;
+                                    bottom.getLayoutParams().height = 0;
+                                    TransitionsUtils.fadeOutInMillisecondsWithDelay(nightVision,200L,300L);
+                                    TransitionsUtils.fadeOutInMillisecondsWithDelay(desc,200L,100L);
+                                    ubiquo.setVisibility(View.GONE);
+
+
+
+                                    new Handler().postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            final Intent toPage = new Intent(Launcher.this,FirstPage.class);
+                                            ActivityTransitionLauncher.with(Launcher.this).from(logo).launch(toPage);
+                                            //startActivity(toPage);
+                                        }
+                                    },600);
+
+
                                 }
 
                                 @Override
