@@ -8,16 +8,19 @@
     android:background="@color/pureWhite"
     tools:context="luche.template.oneshot.ubiquo.com.luche.FirstPage"
     android:id="@+id/firstPageViewGroup">
-
+        <View
+            android:visibility="gone"
+            android:id="@+id/fakeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></View>
 
 
         <ImageView
             android:id="@+id/bg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/pureBlack"
+            android:background="@color/blackishOrange"
             android:visibility="gone" />
-
 
 
             <View
@@ -36,24 +39,181 @@
                 android:layout_below="@+id/first_separator"
                 android:src="@drawable/luche_logo_transparent" />
 
+            <TextView
+
+                android:textSize="16sp"
+                fontPath="fonts/plane_crash.ttf"
+                android:layout_below="@+id/img"
+                android:textColor="@color/pureWhite"
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/tourText"
+                android:text="mallammore tour, isernia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+
+
             <View
+                android:layout_marginTop="38dp"
+                android:layout_below="@+id/img"
                 android:id="@+id/second_separator"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
                 android:layout_alignParentEnd="true"
-                android:layout_below="@+id/img"
                 android:background="@drawable/main_gradient" />
 
-        <Button
-            android:layout_gravity="center"
-            android:id="@+id/phoneButton"
+
+
+    <LinearLayout
+        android:background="@drawable/borded_button"
+        android:layout_below="@id/second_separator"
+        android:orientation="horizontal"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ticketsButtonGroup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="26dp">
+
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ticketsIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:padding="8dp"
-            android:text="Phone"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/ticketsTextView"
+            app:srcCompat="@drawable/ticket_vector" />
+
+        <TextView
+            android:id="@+id/ticketsTextView"
+            fontPath="fonts/plane_crash.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="biglietti"
             android:textColor="@color/pureWhite"
-            android:visibility="gone" />
+            android:textSize="24sp"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/borded_button"
+        android:layout_below="@id/ticketsButtonGroup"
+        android:orientation="horizontal"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ticketsButtonGroupTwo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="26dp">
+
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ticketsIconTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/ticketsTextView"
+            app:srcCompat="@drawable/text" />
+
+        <TextView
+            android:id="@+id/ticketsTextViewTwo"
+            fontPath="fonts/plane_crash.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="info"
+            android:textColor="@color/pureWhite"
+            android:textSize="24sp"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/borded_button"
+        android:layout_below="@id/ticketsButtonGroupTwo"
+        android:orientation="horizontal"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ticketsButtonGroup3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="26dp">
+
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ticketsIcon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/ticketsTextView"
+            app:srcCompat="@drawable/map_pin" />
+
+        <TextView
+            android:id="@+id/ticketsTextView3"
+            fontPath="fonts/plane_crash.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="mappa"
+            android:textColor="@color/pureWhite"
+            android:textSize="24sp"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/borded_button"
+        android:layout_below="@id/ticketsButtonGroup3"
+        android:orientation="horizontal"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ticketsButtonGroup4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="26dp">
+
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ticketsIcon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/ticketsTextView"
+            app:srcCompat="@drawable/people_group" />
+
+        <TextView
+            android:id="@+id/ticketsTextView4"
+            fontPath="fonts/plane_crash.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="organizzatori"
+            android:textColor="@color/pureWhite"
+            android:textSize="18sp"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+
+
 
 
 

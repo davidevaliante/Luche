@@ -6,4 +6,10 @@
     <color name="pureWhite">#ffffff</color>
     <color name="pureBlack">#000000</color>
     <color name="shaded40">#40000000</color>
+    <color name="transparentColor">#00000000</color>
+    <color name="blackishOrange">#262321</color>
+    <color name="yellow">#ffde28</color>
+    <color name="orange">#ff9f19</color>
+    <color name="redish">#ff4a18</color>
+    <color name="redh">#ff1414</color>
 </resources>

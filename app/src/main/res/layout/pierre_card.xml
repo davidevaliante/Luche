@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/p_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            app:civ_border_color="@color/redh"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:id="@+id/p_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/p_img"
+            android:padding="8dp"
+            android:text="Nome\nCognome"
+            android:textColor="@color/pureBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/p_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_name"
+            android:layout_toEndOf="@+id/p_img"
+            android:padding="16dp"
+            android:text="+39145485121"
+            android:textColor="@color/pureBlack"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_gradient" />
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/orange">
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/phone_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_icon"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Chiama"
+                android:textColor="@color/pureWhite"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

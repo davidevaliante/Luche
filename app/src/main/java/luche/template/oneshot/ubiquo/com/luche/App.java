@@ -2,6 +2,9 @@ package luche.template.oneshot.ubiquo.com.luche;
 
 import android.app.Application;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.FirebaseDatabase;
+
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 /**
@@ -17,5 +20,7 @@ public class App extends Application {
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
     }
 }

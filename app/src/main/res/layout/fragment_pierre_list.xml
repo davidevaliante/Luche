@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackishOrange"
+    tools:context="luche.template.oneshot.ubiquo.com.luche.PierreList">
+
+    <TextView
+        fontPath="fonts/plane_crash.ttf"
+        android:textColor="@color/pureWhite"
+        android:background="@color/blackishOrange"
+        android:gravity="center"
+        android:id="@+id/current_city"
+        android:padding="16dp"
+        android:text="current city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingPrefix" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/current_city"
+        android:id="@+id/recyclerPr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

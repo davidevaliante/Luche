@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "699442068280",
+    "firebase_url": "https://luche-e2699.firebaseio.com",
+    "project_id": "luche-e2699",
+    "storage_bucket": "luche-e2699.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699442068280:android:4ec837c69f0139ea",
+        "android_client_info": {
+          "package_name": "luche.template.oneshot.ubiquo.com.luche"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699442068280-akorfp01o377hlculbrdu888ooesvqpv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "luche.template.oneshot.ubiquo.com.luche",
+            "certificate_hash": "a1e9477f61e90e445221d463c5c9722b1b295251"
+          }
+        },
+        {
+          "client_id": "699442068280-huc0ps743jklmnmad9j7cvlkmf4coi4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmx0KjsEUj66X29kffR51bnwr5gTMjLDk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699442068280-huc0ps743jklmnmad9j7cvlkmf4coi4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

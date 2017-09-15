@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="luche.template.oneshot.ubiquo.com.luche.CitySelector">
+
+    <TextView
+        android:id="@+id/ticketsHeader"
+        fontPath="fonts/plane_crash.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blackishOrange"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="citta' disponibili"
+        android:textColor="@color/pureWhite"
+        android:textSize="16sp"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticketsHeader"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/iserniaSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Isernia"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+
+        <TextView
+            android:id="@+id/stgapitoSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Sant'agapito"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+
+        <TextView
+            android:id="@+id/cassinoSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Cassino"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+
+        <TextView
+            android:id="@+id/bojanoSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Bojano"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+
+        <TextView
+            android:id="@+id/carpinoneSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Carpinone"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+
+        <TextView
+            android:id="@+id/monteroduniSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Monteroduni"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+
+        <TextView
+            android:id="@+id/campobassoSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Campobasso"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+
+        <TextView
+            android:id="@+id/venafroSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Venafro"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+
+        <TextView
+            android:id="@+id/agnoneSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Agnone"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+
+        <TextView
+            android:id="@+id/macchiagodenaSelector"
+            fontPath="fonts/Raleway_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="14dp"
+            android:text="Macchiagodena"
+            android:textColor="@color/pureBlack"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/main_gradient" />
+    </LinearLayout>
+
+
+</RelativeLayout>
