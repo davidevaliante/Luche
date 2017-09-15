@@ -103,6 +103,14 @@ public class FirstPage extends AppCompatActivity {
             }
         });
 
+        ticketsGroup4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toOrganizzatori = new Intent(FirstPage.this,Organizzatori.class);
+                startActivity(toOrganizzatori);
+            }
+        });
+
 
     }
 
@@ -217,7 +225,7 @@ public class FirstPage extends AppCompatActivity {
 
                 Transition changeText  = new ChangeText().setChangeBehavior(ChangeText.CHANGE_BEHAVIOR_OUT_IN);
 
-                changeText.addTarget(tourText).setStartDelay(200).setDuration(500);
+                changeText.addTarget(tourText).setStartDelay(200).setDuration(600);
                 com.transitionseverywhere.TransitionManager
                         .beginDelayedTransition(viewGroup,
                                 new TransitionSet().addTransition(fadeIn).addTransition(changeText));
@@ -302,4 +310,8 @@ public class FirstPage extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
 }

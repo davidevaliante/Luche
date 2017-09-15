@@ -5,6 +5,7 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -16,9 +17,10 @@ import com.squareup.picasso.Picasso;
  */
 
 public class PierreViewholder extends RecyclerView.ViewHolder {
-    View item;
+    View item,middleLine;
     TextView name, number;
     CircularImageView img;
+    RelativeLayout actionCall;
 
     public PierreViewholder(View itemView) {
         super(itemView);
@@ -27,6 +29,8 @@ public class PierreViewholder extends RecyclerView.ViewHolder {
         name = itemView.findViewById(R.id.p_name);
         number = itemView.findViewById(R.id.p_phone);
         img = itemView.findViewById(R.id.p_img);
+        middleLine = itemView.findViewById(R.id.middle_separator);
+        actionCall = itemView.findViewById(R.id.actionCall);
     }
 
     public void setname (String pName){

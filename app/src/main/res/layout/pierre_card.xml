@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="110dp"
     android:layout_marginBottom="8dp">
@@ -14,11 +15,12 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_centerVertical="true"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             app:civ_border_color="@color/redh"
             app:civ_border_width="2dp" />
 
         <TextView
+            fontPath="fonts/raleway_semibold.ttf"
             android:layout_marginStart="8dp"
             android:id="@+id/p_name"
             android:layout_width="wrap_content"
@@ -27,9 +29,10 @@
             android:padding="8dp"
             android:text="Nome\nCognome"
             android:textColor="@color/pureBlack"
-            android:textSize="16sp" />
-
+            android:textSize="16sp"
+            tools:ignore="MissingPrefix" />
         <TextView
+
             android:id="@+id/p_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,16 +40,28 @@
             android:layout_toEndOf="@+id/p_img"
             android:padding="16dp"
             android:text="+39145485121"
-            android:textColor="@color/pureBlack"
-            android:textSize="14sp" />
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:id="@+id/middle_separator"
+            android:background="@drawable/main_gradient"
+            android:layout_marginStart="84dp"
+            android:layout_below="@+id/p_name"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="4dp"
             android:layout_alignParentBottom="true"
             android:background="@drawable/main_gradient" />
 
         <RelativeLayout
+            android:id="@+id/actionCall"
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
@@ -60,6 +75,7 @@
                 app:srcCompat="@drawable/phone_icon" />
 
             <TextView
+                fontPath="fonts/Raleway_Regular.ttf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/phone_icon"
@@ -67,7 +83,14 @@
                 android:padding="12dp"
                 android:text="Chiama"
                 android:textColor="@color/pureWhite"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                tools:ignore="MissingPrefix" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/redh" />
 
         </RelativeLayout>
 

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="luche.template.oneshot.ubiquo.com.luche.Organizzatori"
+    android:id="@+id/org_group">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:id="@+id/imageContainer"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:id="@+id/first_org"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <ImageView
+              android:scaleType="centerCrop"
+              android:id="@+id/firstPic"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <View
+              android:id="@+id/shader_one"
+              android:visibility="gone"
+              android:background="@color/shaded40"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+          <TextView
+              android:textSize="20sp"
+              android:padding="16dp"
+              android:layout_alignParentBottom="true"
+              fontPath="fonts/plane_crash.ttf"
+              android:text="andrea martella"
+              android:textColor="@color/pureWhite"
+              android:id="@+id/pot_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:ignore="MissingPrefix" />
+
+
+          <ImageView
+              android:layout_margin="16dp"
+              android:layout_marginTop="32dp"
+              android:layout_alignParentEnd="true"
+              android:id="@+id/fb_1"
+              app:srcCompat="@drawable/facebook_vector"
+              android:layout_width="38dp"
+              android:layout_height="38dp" />
+          <ImageView
+              android:visibility="gone"
+              android:layout_below="@id/fb_1"
+              android:layout_margin="16dp"
+              android:layout_alignParentEnd="true"
+              android:id="@+id/phone_1"
+              app:srcCompat="@drawable/phone_icon"
+              android:layout_width="30dp"
+              android:layout_height="30dp" />
+
+          <ImageView
+              android:visibility="gone"
+
+              android:id="@+id/nv_1"
+              android:layout_margin="8dp"
+              android:layout_alignParentEnd="true"
+              android:layout_below="@+id/phone_1"
+              app:srcCompat="@drawable/vector_nv"
+              android:layout_width="46dp"
+              android:layout_height="46dp" />
+
+
+
+      </RelativeLayout>
+      <View
+          android:background="@drawable/main_gradient"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"/>
+
+      <RelativeLayout
+          android:id="@+id/second_org"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <ImageView
+              android:scaleType="centerCrop"
+
+              android:id="@+id/secondPic"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+          <View
+              android:id="@+id/shader_two"
+              android:visibility="gone"
+              android:background="@color/shaded40"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+
+          <ImageView
+              android:visibility="gone"
+              android:layout_margin="16dp"
+              android:layout_alignParentEnd="true"
+              android:id="@+id/fb_2"
+              app:srcCompat="@drawable/facebook_vector"
+              android:layout_width="38dp"
+              android:layout_height="38dp" />
+          <ImageView
+              android:visibility="gone"
+              android:layout_below="@id/fb_2"
+              android:layout_margin="16dp"
+              android:layout_alignParentEnd="true"
+              android:id="@+id/phone_2"
+              app:srcCompat="@drawable/phone_icon"
+              android:layout_width="30dp"
+              android:layout_height="30dp" />
+
+          <TextView
+              android:textSize="20sp"
+              android:padding="16dp"
+              android:layout_alignParentBottom="true"
+              fontPath="fonts/plane_crash.ttf"
+              android:text="michele montanaro"
+              android:textColor="@color/pureWhite"
+              android:id="@+id/monty_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:ignore="MissingPrefix" />
+
+          <ImageView
+              android:visibility="gone"
+
+              android:id="@+id/nv_2"
+              android:layout_margin="8dp"
+              android:layout_alignParentEnd="true"
+              android:layout_below="@+id/phone_2"
+              app:srcCompat="@drawable/vector_nv"
+              android:layout_width="46dp"
+              android:layout_height="46dp" />
+
+      </RelativeLayout>
+      <View
+          android:background="@drawable/main_gradient"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"/>
+
+      <RelativeLayout
+          android:id="@+id/third_org"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <ImageView
+              android:scaleType="centerCrop"
+              android:id="@+id/thirdPic"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <View
+              android:id="@+id/shader_three"
+              android:visibility="gone"
+              android:background="@color/shaded40"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+
+          <ImageView
+              android:visibility="gone"
+              android:layout_margin="16dp"
+              android:layout_alignParentEnd="true"
+              android:id="@+id/fb_3"
+              app:srcCompat="@drawable/facebook_vector"
+              android:layout_width="38dp"
+              android:layout_height="38dp" />
+          <ImageView
+              android:visibility="gone"
+              android:layout_below="@id/fb_3"
+              android:layout_margin="16dp"
+              android:layout_alignParentEnd="true"
+              android:id="@+id/phone_3"
+              app:srcCompat="@drawable/phone_icon"
+              android:layout_width="30dp"
+              android:layout_height="30dp" />
+
+          <TextView
+              android:textSize="20sp"
+              android:padding="16dp"
+              android:layout_alignParentBottom="true"
+              fontPath="fonts/plane_crash.ttf"
+              android:text="angelo laurelli"
+              android:textColor="@color/pureWhite"
+              android:id="@+id/angelo_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:ignore="MissingPrefix" />
+          <ImageView
+              android:visibility="gone"
+              android:id="@+id/nv_3"
+              android:layout_margin="8dp"
+              android:layout_alignParentEnd="true"
+              android:layout_below="@+id/phone_3"
+              app:srcCompat="@drawable/vector_nv"
+              android:layout_width="46dp"
+              android:layout_height="46dp" />
+
+      </RelativeLayout>
+      <View
+          android:background="@drawable/main_gradient"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"/>
+
+  </LinearLayout>
+
+</RelativeLayout>
